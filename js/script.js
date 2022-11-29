@@ -46,8 +46,12 @@ Dichiariamo chi ha vinto.
 
 
 //chiedo all'utente di scegliere tra pari e dispari 
-const pariDispari = prompt ('Scegli tra pari e dispari');
+let pariDispari = prompt ('Scegli tra pari e dispari');
 console.log(pariDispari);
+/**while (pariDispari !== "pari" || pariDispari !== "dispari") {
+    pariDispari = prompt ('Scegli tra pari e dispari');
+    console.log(pariDispari);
+}*/
 
 //chiedo all'utente di scegliere un numero da 1 a 5 
 const numero = prompt ('Scegli un numero da 1 a 5');
@@ -62,3 +66,17 @@ function getRandomnumber (numMin, numMax) {
 
 const numeroPc = getRandomnumber(1, 5);
 console.log(numeroPc);
+
+//creo una funziona che mi permetta di sommare i due numeri e stabilire se il risultato è pari o dispari
+
+function getEvenOdd (valore1, valore2) {
+    let somma = parseInt(valore1) + parseInt(valore2);
+    console.log(somma);
+    if (somma % 2 === 0) {
+        console.log("il numero è pari")
+    } else {
+        console.log("il numero è dispari")
+    }
+}
+
+const risultato = getEvenOdd(numero, numeroPc);
