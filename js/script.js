@@ -71,12 +71,20 @@ console.log(numeroPc);
 
 function getEvenOdd (valore1, valore2) {
     let somma = parseInt(valore1) + parseInt(valore2);
-    console.log(somma);
+    console.log("la somma è " + somma);
     if (somma % 2 === 0) {
-        console.log("il numero è pari")
+        return "pari";
+
     } else {
-        console.log("il numero è dispari")
+        return "dispari";
     }
 }
 
 const risultato = getEvenOdd(numero, numeroPc);
+console.log(risultato);
+
+if (risultato === pariDispari) {
+    console.log("Hai vintoo!");
+} else {
+    console.log("Hai perso!");
+}
