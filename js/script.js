@@ -4,7 +4,7 @@
 Chiedere all’utente di inserire una parola:
 Creare una funzione per capire se la parola inserita è palindroma
  *
- */
+
 
 //chiedo all'utente di inserire una parola
 const parola = prompt ('Scrivi una parola');
@@ -32,6 +32,8 @@ if (parola === parolaInversa){
     console.log('la parola non è palindroma');
 }
 
+ */
+
 /**
  *
  * Pari e Dispari
@@ -41,3 +43,22 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari at
 Dichiariamo chi ha vinto.
  *
  */
+
+
+//chiedo all'utente di scegliere tra pari e dispari 
+const pariDispari = prompt ('Scegli tra pari e dispari');
+console.log(pariDispari);
+
+//chiedo all'utente di scegliere un numero da 1 a 5 
+const numero = prompt ('Scegli un numero da 1 a 5');
+console.log(numero);
+
+//creo una funzione per generare un numero random per il computer compreso tra 1 e 5
+
+function getRandomnumber (numMin, numMax) {
+    const randomNumber = Math.floor( Math.random() * (numMax - numMin + 1) + numMin );
+    return randomNumber;
+}
+
+const numeroPc = getRandomnumber(1, 5);
+console.log(numeroPc);
